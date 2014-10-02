@@ -1,4 +1,5 @@
 Trackmymixes::Application.routes.draw do
+  root 'main#home'
   match '/help',    to: 'main#help',    via: 'get'
   match '/about',   to: 'main#about',   via: 'get'
   match '/contact', to: 'main#contact', via: 'get'
@@ -6,7 +7,6 @@ Trackmymixes::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'main#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
