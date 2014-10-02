@@ -1,7 +1,7 @@
 Trackmymixes::Application.routes.draw do
-  get "main/home"
-  get "main/help"
-  get "main/about"
+  match '/help',    to: 'main#help',    via: 'get'
+  match '/about',   to: 'main#about',   via: 'get'
+  match '/contact', to: 'main#contact', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
